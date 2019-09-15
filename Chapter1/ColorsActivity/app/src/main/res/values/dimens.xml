@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="color_creator_layout_margin">24dp</dimen>
+    <dimen name="color_creator_layout_margin_display">8dp</dimen>
+    <dimen name="color_creator_layout_margin_title">8dp</dimen>
+    <dimen name="color_creator_layout_margin_description">8dp</dimen>
+    <dimen name="color_creator_layout_margin_button">8dp</dimen>
+    <dimen name="color_creator_display">32dp</dimen>
+</resources>
