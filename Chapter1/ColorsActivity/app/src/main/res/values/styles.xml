@@ -12,12 +12,4 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="color_creator_button">
-        <item name="android:backgroundTint">@android:color/black</item>
-    </style>
-
-    <style name="color_creator_body" parent="TextAppearance.MaterialComponents.Body1">
-
-    </style>
-
 </resources>
