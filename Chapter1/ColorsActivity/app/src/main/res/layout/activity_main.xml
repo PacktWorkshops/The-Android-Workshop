@@ -100,7 +100,7 @@
         android:id="@+id/color_creator_display"
         android:layout_width="match_parent"
         style="@style/TextAppearance.MaterialComponents.Body1"
-        android:text="Created Color Display Panel"
+        android:text="@string/color_created_display_panel"
         android:gravity="center"
         android:layout_height="@dimen/color_creator_display_panel"
         android:layout_margin="@dimen/color_creator_layout_margin"
