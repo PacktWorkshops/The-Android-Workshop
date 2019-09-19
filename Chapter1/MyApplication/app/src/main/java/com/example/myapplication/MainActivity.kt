@@ -15,6 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        Exercise 03 Loading Webview is left here as a reference
+//        val webView = WebView(this)
+//        setContentView(webView)
+//        webView.loadUrl("https://www.google.com")
+
         //Get the first name TextInputEditText value
         val firstName = (first_name as EditText).text
         //Get the last name TextInputEditText value

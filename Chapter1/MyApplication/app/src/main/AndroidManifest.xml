@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <!--Exercise 03 - Adding INTERNET Permission to manifest-->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
