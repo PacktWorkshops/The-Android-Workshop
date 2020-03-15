@@ -101,7 +101,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun setLoggedIn(userName: String) {
         loggedInUser = userName
         val welcomeMessage = getString(R.string.welcome_text, userName)
