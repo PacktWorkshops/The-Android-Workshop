@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListFragment">
+
+    <TextView
+        android:text="@string/star_signs"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="@string/aquarius"
+        android:id="@+id/aquarius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pisces"
+        android:text="@string/pisces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/aries"
+        android:text="@string/aries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/taurus"
+        android:text="@string/taurus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/gemini"
+        android:text="@string/gemini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cancer"
+        android:text="@string/cancer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/leo"
+        android:text="@string/leo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/virgo"
+        android:text="@string/virgo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/libra"
+        android:text="@string/libra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/scorpio"
+        android:text="@string/scorpio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/sagittarius"
+        android:text="@string/sagittarius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/capricorn"
+        android:text="@string/capricorn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp" />
+
+</LinearLayout>
