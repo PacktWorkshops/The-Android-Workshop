@@ -10,14 +10,19 @@
         android:id="@+id/star_sign_list"
         android:name="com.example.fragmentstablets.ListFragment"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_weight="1"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/dividerVertical" />
 
     <fragment
         android:id="@+id/star_sign_detail"
         android:name="com.example.fragmentstablets.DetailFragment"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_weight="2"/>
 
 </LinearLayout>

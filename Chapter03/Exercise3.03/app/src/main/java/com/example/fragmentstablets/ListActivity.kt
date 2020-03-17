@@ -1,9 +1,11 @@
 package com.example.fragmentstablets
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
+const val STAR_SIGN_ID = "STAR_SIGN_ID"
 
 interface StarSignListener {
     fun onSelected(id: Int)
@@ -23,11 +25,16 @@ class MainActivity : AppCompatActivity(), StarSignListener {
     override fun onSelected(id: Int) {
 
         if (isDualPane) {
-            DetailFragment.newInstance(id)
-        }
-        else {
 
-        }
+            val detailFragment =
+                supportFragmentManager.findFragmentById(R.id.star_sign_detail) as DetailFragment
+            detailFragment.setStarSignData(id)
+        } else {
 
+            val detailIntent = Intent(this, DetailActivity::class.java)
+            detailIntent.putExtra(STAR_SIGN_ID, id)
+            startActivity(detailIntent)
+        }
     }
+
 }
