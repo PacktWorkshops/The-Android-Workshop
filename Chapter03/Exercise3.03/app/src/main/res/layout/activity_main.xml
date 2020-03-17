@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/star_sign_list"
-        android:name="com.example.fragmentstablets.ListFragment"
+        android:name="com.example.staticfragments.ListFragment"
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>
 

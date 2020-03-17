@@ -1,4 +1,4 @@
-package com.example.fragmentstablets
+package com.example.staticfragments
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

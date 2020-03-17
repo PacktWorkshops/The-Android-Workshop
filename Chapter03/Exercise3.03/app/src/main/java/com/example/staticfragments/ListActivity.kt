@@ -1,4 +1,4 @@
-package com.example.fragmentstablets
+package com.example.staticfragments
 
 import android.content.Intent
 import android.os.Bundle

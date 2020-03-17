@@ -1,4 +1,4 @@
-package com.example.fragmentstablets
+package com.example.staticfragments
 
 import org.junit.Test
 
