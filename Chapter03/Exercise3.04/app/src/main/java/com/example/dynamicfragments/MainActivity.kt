@@ -34,7 +34,9 @@ class MainActivity : AppCompatActivity(), StarSignListener {
             val detailFragment = DetailFragment.newInstance(starSignId)
 
             supportFragmentManager.beginTransaction()
-                .replace(frameLayout.id, detailFragment).commit()
+                .replace(frameLayout.id, detailFragment)
+                .addToBackStack(null)
+                .commit()
         }
     }
 

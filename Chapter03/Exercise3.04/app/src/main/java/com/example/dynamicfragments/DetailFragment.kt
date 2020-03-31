@@ -19,15 +19,13 @@ class DetailFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_detail, container, false)
     }
 
-    override fun onResume() {
-        super.onResume()
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         val starSignId = arguments?.getInt(STAR_SIGN_ID, 0) ?: 0
         setStarSignData(starSignId)
-
     }
 
-    internal fun setStarSignData(starSignId: Int) {
+    private fun setStarSignData(starSignId: Int) {
 
             //Some text below should in production be string resources, done as hardcoded text here for simplicity
             when (starSignId) {
