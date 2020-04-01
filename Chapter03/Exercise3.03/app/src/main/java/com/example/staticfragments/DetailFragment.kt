@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_detail.*
 
 
@@ -83,6 +84,9 @@ class DetailFragment : Fragment() {
                     star_sign.text = getString(R.string.capricorn)
                     symbol.text = getString(R.string.symbol,"Mountain Goat")
                     date_range.text = getString(R.string.date_range,"December 22 - January 19")
+                }
+                else -> {
+                    Toast.makeText(context, getString(R.string.unknown_star_sign), Toast.LENGTH_LONG).show();
                 }
             }
 
