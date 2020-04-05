@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Planet Quiz</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="largest_planet">What is the largest planer?</string>
+    <string name="most_moons">Which planet has the most moons?</string>
+    <string name="side_spinning">Which planet spins on its side?</string>
 </resources>

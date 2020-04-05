@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="QuestionsView" parent="Base.TextAppearance.AppCompat.Large" >
+        <item name="android:padding">18dp</item>
+    </style>
+
+    <style name="QuestionsViewHeader" parent="Base.TextAppearance.AppCompat.Display1" >
+        <item name="android:padding">18dp</item>
+    </style>
+
 </resources>

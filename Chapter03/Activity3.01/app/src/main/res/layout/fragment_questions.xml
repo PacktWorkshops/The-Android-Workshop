@@ -1,13 +1,40 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.planetfragments.QuestionsFragment">
+    tools:context=".AnswersFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            style="@style/QuestionsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/largest_planet"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/QuestionsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/most_moons"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/QuestionsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/side_spinning"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

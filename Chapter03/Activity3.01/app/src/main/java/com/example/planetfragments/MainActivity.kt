@@ -18,6 +18,15 @@ class MainActivity : AppCompatActivity(), AnswerListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        fragment_container?.let { frameLayout ->
+
+            val questionsFragment = AnswersFragment()
+
+            supportFragmentManager.beginTransaction()
+                .add(frameLayout.id, questionsFragment).commit()
+
+        }
     }
 
     override fun onSelected(questionId: Int, answerId: Int) {
