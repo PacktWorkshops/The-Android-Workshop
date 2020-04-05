@@ -1,4 +1,4 @@
-package com.example.dynamicfragments
+package com.example.planetfragments
 
 import org.junit.Test
 
