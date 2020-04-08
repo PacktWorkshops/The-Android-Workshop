@@ -6,14 +6,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 
 const val QUESTION_ID = "QUESTION_ID"
-const val ANSWER_ID = "ANSWER_ID"
 
-interface AnswerListener {
-    fun onSelected(questionId: Int, answerId: Int)
+interface AnswersListener {
+    fun onSelected(questionId: Int)
 }
 
-
-class MainActivity : AppCompatActivity(), AnswerListener {
+class MainActivity : AppCompatActivity(), AnswersListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +19,7 @@ class MainActivity : AppCompatActivity(), AnswerListener {
 
         fragment_container?.let { frameLayout ->
 
-            val questionsFragment = AnswersFragment()
+            val questionsFragment = QuestionsFragment()
 
             supportFragmentManager.beginTransaction()
                 .add(frameLayout.id, questionsFragment).commit()
@@ -29,11 +27,11 @@ class MainActivity : AppCompatActivity(), AnswerListener {
         }
     }
 
-    override fun onSelected(questionId: Int, answerId: Int) {
+    override fun onSelected(questionId: Int) {
 
         fragment_container?.let {frameLayout ->
 
-            val answersFragment = AnswersFragment.newInstance(questionId, answerId)
+            val answersFragment = AnswersFragment.newInstance(questionId)
 
             supportFragmentManager.beginTransaction()
                 .replace(frameLayout.id, answersFragment)
