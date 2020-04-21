@@ -13,12 +13,6 @@ import kotlinx.android.synthetic.main.fragment_style.*
  */
 class StyleFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,8 +21,8 @@ class StyleFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_style, container, false)
     }
 
-    override fun onResume() {
-        super.onResume()
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         bold_button.setOnClickListener {
             if (hello_world.typeface.isItalic) hello_world.setTypeface(hello_world.typeface, Typeface.BOLD_ITALIC) else hello_world.setTypeface(null, Typeface.BOLD)
